@@ -1,6 +1,9 @@
 document.getElementById("linkvalue").style.display = "none";
 document.getElementById("linkvalue").style.fontSize = "30px";
 
+document.getElementById("SchoolProjects").style.margin = "-41px";
+document.getElementById("SchoolProjects").style.marginTop = "-60px";
+
 document.getElementById("PP1").style.display = "none";
 document.getElementById("PP2").style.display = "none";
 document.getElementById("PP3").style.display = "none";
@@ -36,6 +39,7 @@ function setLink(linkString, hrefDocumentId){
 
 document.getElementById("SchoolProjects").style.fontSize = "xxx-large";
 document.getElementById("SchoolProjects").style.width = "700px";
+document.getElementById("SchoolProjects").style.height = "130px";
 document.getElementById("SchoolProjects").style.color = "purple";
 document.getElementById("SchoolProjects").style.borderColor = "grey";
 // Customize apperence of the dropdown menu 
@@ -55,19 +59,17 @@ document.getElementById("Proj1").onclick = function() {
 }
 document.getElementById("Proj2").onclick = function(){
     ChangeLabel(WebApp);
-    setLink("https://github.com/KrishMay05/Purdue23-24/blob/main/WebsiteCode.js","linkvalue")
+    setLink("https://github.com/KrishMay05/KrishMay05.github.io/blob/main/WebsiteCode.js","linkvalue")
 }
 document.getElementById("Proj3").onclick = function(){
     ChangeLabel(WebAppHTML);
-    setLink("https://github.com/KrishMay05/Purdue23-24/blob/main/WebsiteRunner.html","linkvalue")
+    setLink("https://github.com/KrishMay05/KrishMay05.github.io/blob/main/index.html","linkvalue")
 }
 document.getElementById("Proj4").onclick = function(){
     ChangeLabel(FTC);
     setLink("https://github.com/KrishMay05/Freight_Frenzy_2021-22","linkvalue")
 }
 // Makes it so that on button click it shows subheading information on click and makes the Github link button visible again
-
-
 var dropCount = 0; 
 document.getElementById("SchoolProjects").onclick = function(){
     dropCount = dropCount+1;

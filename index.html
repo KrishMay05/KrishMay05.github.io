@@ -10,6 +10,7 @@
             background-color: rgb(72, 134, 195);
             text-decoration-color: white;
             margin-left: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         /* Cosmetics for the background */
         canvas{
@@ -33,6 +34,7 @@
             margin-top: 2%;
             text-align: center;            
         }
+        /* customizes the button visuals */
         .Heading{
             font: bold;
             background-color: black;
@@ -44,7 +46,30 @@
             
 
         }
-        /* customizes the button visuals */
+        /* Customizes the Heading div class, sets a header on the page with lings and a title */
+        .dropdown{
+            background-color: rgb(169, 202, 169);
+            width: 500px;
+            /* border: 5px */
+            padding: 0px;
+            margin-left: 40px;
+            margin-top: -400px;
+            position: relative;
+        }
+        .bio{
+            position: sticky;
+            margin-left: 800px;
+            margin-top: 0px;
+            background-color: rgba(214, 149, 88, 0.854);
+        }
+        .croppedKrish{
+            margin-left: 800px;
+            margin-top: -200px;
+
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
         label{
             /* position:sticky; */
             margin-left: 0%;
@@ -81,6 +106,13 @@
                     height="50";
                     >
                 </a>
+                <a href="https://github.com/KrishMay05">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYNeX9Lac4S26To2qQN3FEqeFyjFMqDLdg5V0XeJo7Zg&s" alt="GitHub"
+                    width="50";
+                    height="50";
+                    >
+                </a>
+                <!-- Creats multiple images with their corresponding links -->
 
 
             </h2>
@@ -89,19 +121,45 @@
         <button id = "Proj2">Project 2: Website JS</button> 
         <button id = "Proj3">Project 3: Website HTML</button> 
         <button id = "Proj4">FTC Code Collection</button>
+        <!-- create the buttons -->
         <br>
         <br>
         <label>     </label>
-        <label id = "ProjDetails"></label>
+        <label id = "ProjDetails"><br><br></label>
         <br>
         <label>     </label>
         <a href=""id = "linkvalue">GitHub Link</a>
-        <button id = "SchoolProjects">Purdue CS Projects & HW ➡</button>
-        <a href=""id = "PP1">Purdue Project 1</a>
-        <a href=""id = "PP2">Purdue Project 2</a>
-        <a href=""id = "PP3">Purdue Project 3</a>
+        <div class = "croppedKrish">
+            <img src = "https://lh3.googleusercontent.com/fife/AKsag4MRAlwcOndzfdrNgUp8Qwje63D0Hv8WwPOqKoC12566uMGfBvVbb16PcAMb2xHpR-kVx0RKnH0yC-8eZ6dzuAUfqtVyW4K_lI1BM2KNe9NhneJRXEQjIVUnhUHfte1XF-Eonh56tAIBoRTqImABw6lMSnutiXKXJ0n1Wju38lnl4Db2P6iQIEv021fy3fEZBL5DoxWTxPG1yQju6WbnQt7Qkgp8_x-vOxgMXnKwybaCUiTC5b3eIFitXVkkPIuz35SVMVOb-twyca-gOHtLE2VcWy7UCam_iTDijxXJT7xH4gF9rucFlsdRw0eQ9A4-tpda4mYrltNR65gk0cL45qouyW1PS4IKUnqhOJvIibkSJ84FfJG9Bwbkw-50pQpqNfmVHW0bK3AmpA6qcb_ei9BZBz-Udw2RbDYM-VogF-NKdkEgwqpneZ4yg5k7Ln5rsEwOlEsxpxn9GdPTdpdQiJfFkv5LVqesnGfIckpBgZCE1h8Kgn9i7XG-vsf_3-_T8zstLpRPuUpPSsKAOlmFq3TwZioKHyfxDLjpfAb4tjS5rtBjXMan1qM4Z3uQixABBnQleIGdnpvutrQlYmbI8sg7mVwjcz_PL4yx9gD2FXl9wXDHVfGfBQT4o1EGLpTRFmBOTPxT6_1HjVyFPKHxXxO9KZoXrhRGmr2pvVBq1o8WK5oKfB8Stc1vYTr61ok8BXeyGkVNmZcWncFn7Ae_EtsivJDoMI6rUwiCBvDRJ3cJdsvHcfHSOO4zxL56eAQqrQ8wg9e453BYROk6fXV8oZjX6OsTmIWQBCCXPFs2pZYh7McGUa3bRWFh2QKnxYieaevA_fD-aRmm6h4Xfwbm7Av0mCVIg_CLdMjLry44wtr-9ZaLiaOaocVjQDLsYep33civbdISVsC_YndpR1A4ywcb8Mj7JfhTLdaVmDovM_PpEAJ0vUjU_5QUzMLwuPll_UHaB4Z9QtQqce8ngfrrkcjVsECB7zaIuQOrmX137kGY2QqjP78d_w1MAcAgOz7kWL8kgHtTZjbDpv4Hrlx75eN69i9wCjOzBA8tX_grzwzbQO9Gbu4JqJwY-jCROu3eNfe8NB1mS_Z0VOiAgmTZWqCqD69vdj66OeLN81murHTL0kCY7XnRHOI2jk5o5QmQNUTT9OeX0DOSg6DOYEfgEkX1JNVCLSW7SZnSvjHOyS99D4brUmMvoxuWVOZ1gDZCscZfmhoeZtOAUh2zWS_2-1kgFGuHIAQbo0mTva7S3suYEhHCsFGehOopt2EwgLyA2OC10ApI3UK7Hd2jjTPkXwXw4ErDvTysx9h1rA8PM-8h2tkEZbXkilQFQ2rrdl0Nc8PXziFsgw3HucoGAx-SdTnuD8f9gUL78r1M9Kns8BR82I5wgPBFCHstsDoMlTqXcYOlp-Zi4gyCxIDG3IBtjyCiAx-GIfgR6lc1QEesvclPfoNYdf3IuCQSrNTI3TdldAFToCViXT1zb6pXMa66oLByrMj-2LxFQwdE5kI5Nol1IG9xiZr_zuwYdT4Z3xUlYdAtCF1Gky7PqzRPj2A-CgVYOf_3SJxJpLxHhZ4-VPP8eP2BM-yQAptUJCYT2MWqlcDneEbAIP9Ux0qqMs9KAS6kMw4JvnszqfV7m-hBck8=w1204-h1604-s-no?authuser=0"
+            height="820px";
+            width="600px";
+            >
+        </div>
+        <div class = "bio">
+            <label>
+                    My Name is Krish Patel and I am currently a Freshman studying Comp. Sci. at Purdue University.
+                    I want to first off thank you for visiting my website and taking the time to view my projects. 
+                    I come from a smallish town called Aurora located in NE Ohio and I have lived around there my entire life until now.
+                    I wanted to create this website as a showcase for code I have worked on until now
+                    and a future showcase for the many more projects I will build. 
+                    I learned JS and HTML in a few days to try and build this website, and as time as gone on I have added bits and pieces 
+                    here and there to make the website look better and better. This website was originally created in Aug 2023, so by the time
+                    you are seeing this it may look completly diffrent. <br> - Thanks for visiting, Krish  
+
+            </label> 
+
+        </div>
+        <div class ="dropdown">
+            <button id = "SchoolProjects">Purdue CS Projects & HW ➡</button>
+            <br>
+            <br>
+            <br>
+            <a href=""id = "PP1">Purdue Project 1</a>
+            <a href=""id = "PP2">Purdue Project 2</a>
+            <a href=""id = "PP3">Purdue Project 3</a>
+        </div>
+            <!-- Create the links for the various projects -->
         <script src="WebsiteCode.js">
-           
         </script> 
 
        
