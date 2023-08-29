@@ -38,7 +38,7 @@ function setLink(linkString, hrefDocumentId){
 // Displays relevant information depending on the CodProject object 
 
 document.getElementById("SchoolProjects").style.fontSize = "xxx-large";
-document.getElementById("SchoolProjects").style.width = "700px";
+document.getElementById("SchoolProjects").style.width = "665px";
 document.getElementById("SchoolProjects").style.height = "130px";
 document.getElementById("SchoolProjects").style.color = "purple";
 document.getElementById("SchoolProjects").style.borderColor = "grey";
