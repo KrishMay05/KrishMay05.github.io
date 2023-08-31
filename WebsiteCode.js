@@ -78,13 +78,11 @@ document.getElementById("SchoolProjects").onclick = function(){
         setLink("https://google.com","PP1");
         setLink("https://amazon.com","PP2");
         setLink("https://youtube.com","PP3");
-
     }else{
         document.getElementById("SchoolProjects").innerHTML = "Purdue CS Projects & HW ➡";
         document.getElementById("PP1").style.display = "none";
         document.getElementById("PP2").style.display = "none";
         document.getElementById("PP3").style.display = "none";
-
     }
 
     
