@@ -1,41 +1,90 @@
-<html lang = "en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            body{
-                font-size: large;
-                background-image: linear-gradient(rgb(162, 89, 208), rgb(72, 25, 98));
-                text-decoration-color: white;
-                margin-left: 50px;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: large;
+            background-image: linear-gradient(rgb(200, 177, 215), rgb(125, 119, 129));
+            text-decoration-color: white;
+            margin-left: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-size: inherit;
+            background-size: 100% 150%;
                 
-            }
-             /* Cosmetics for the background */
-            canvas{
-                border:1px solid black;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                margin-left: -320px;
-                margin-top: -320px;
-            }
-            .Heading{
-                font: bold;
-                background-color: black;
-                color:azure;
-                margin: -50px;
-                margin-top: -5px;
-                text-indent: 50px;
-                font-size: 50px;
-            }
-            a{
-                text-decoration: none;
-            }
-        
-        </style>
+        }
+        /* Cosmetics for the background */
+        canvas{
+            border:1px solid black;
+	        position: absolute;
+  	        top: 50%;
+  	        left: 50%;
+  	        margin-left: -320px;
+  	        margin-top: -320px;
+        }
+        button{
+            color: rgb(99, 42, 146);
+            border-color: bisque;
+            color-scheme: bla ck;
+            background-color: blanchedalmond;
+            width: 160px;
+            height: 80px;
+            font-size: 20px;
+            position:sticky;
+            margin-left: auto;
+            margin-top: 2%;
+            text-align: center;            
+        }
+        /* customizes the button visuals */
+        .Heading{
+            font: bold;
+            background-color: black;
+            color:azure;
+            margin: -50px;
+            margin-top: -60px;
+            text-indent: 50px;
+            font-size: 50px;
+            
+
+        }
+        .Bottom{
+            font: bold;
+            background-color: rgb(125, 119, 129);
+            color:rgb(125, 119, 129);
+            margin-top: 625px;
+            position: absolute;
+            font-size: 50px;
+            margin-left: -50px;
+
+        }
+        .newPage{
+            font-size: xx-large;
+            margin-top: -30px;
+            margin-left: 50px;
+
+        }
+        .Picture{
+            position: fixed;
+            margin-left: 1100px;
+            margin-top: 120px;
+        }
+        label{
+            /* position:sticky; */
+            margin-left: 0%;
+            margin-top: 10%;
+        }
+        a {
+            text-decoration: none ; 
+
+        }
+        /* customizes the placment of the subheading */
+    </style>
+</head>
+    <body>
         <div class="Heading">
-            <h2> MY CODE PROJECTS  
+            <h2>KRISH'S CODING PROJECTS 
                 <a href="https://www.instagram.com/hershey.krish/">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Instagram"
                     width="50";
@@ -67,8 +116,41 @@
 
             </h2>
         </div>
-        <label>
+        <div class="Bottom">
+            _________________________________________________________________ 
+            <div class = "newPage">
+                <nav>
+                    <a href="index.html">Home Page</a>
+                </nav>
+            </div>
+        </div>
+        <div class = "Picture">
+            <img src="", id="programPic",alt="hello"
+            width="250";
+            height="250";
+            >
+        </div>
+        <button id = "Proj1">Project 1: URL Reader</button>
+        <button id = "Proj2">Project 2: Website JS</button> 
+        <button id = "Proj3">Project 3: Website HTML</button> 
+        <button id = "Proj4">Project 4: Altered Tetris</button>
+        <button id = "Proj5">Project 5: Minesweeper</button>
+        <button id = "ProjX">FTC Code Collection</button>
+        
+        <!-- create the buttons -->
+        <br>
+        <br>
+        <label>     </label>
+        <label id = "ProjDetails"><br><br></label>
+        <br>
+        <label>     </label>
+        <a href=""id = "linkvalue">GitHub Link</a>
+        <br> <br> <br><br><br><br><br><br><br>
+        
+            <!-- Create the links for the various projects -->
+        <script src="others.js">
+        </script> 
 
-        </label>
-    </head>
+       
+    </body>
 </html>
