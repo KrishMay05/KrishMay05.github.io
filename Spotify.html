@@ -7,8 +7,7 @@
     <style>
         body{
             font-size: large;
-            /* background-image: linear-gradient(rgb(200, 177, 215), rgb(125, 119, 129)); */
-            text-decoration-color: white;
+            background-color: rgb(200, 177, 215);
             margin-left: 50px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             background-size: inherit;
@@ -24,19 +23,7 @@
   	        margin-left: -320px;
   	        margin-top: -320px;
         }
-        button{
-            color: rgb(99, 42, 146);
-            border-color: bisque;
-            color-scheme: bla ck;
-            background-color: blanchedalmond;
-            width: 160px;
-            height: 80px;
-            font-size: 20px;
-            position:sticky;
-            margin-left: auto;
-            margin-top: 2%;
-            text-align: center;            
-        }
+        
         /* customizes the button visuals */
         .Heading{
             font: bold;
@@ -49,7 +36,7 @@
             
 
         }
-        /* .Bottom{
+        .Bottom{
             font: bold;
             background-color: rgb(125, 119, 129);
             color:rgb(125, 119, 129);
@@ -58,7 +45,7 @@
             font-size: 50px;
             margin-left: -50px;
 
-        } */
+        }
         .newPage{
             font-size: xx-large;
             margin-top: -30px;
@@ -77,9 +64,8 @@
         /* customizes the placment of the subheading */
     </style>
 </head>
-    <body>
         <div class="Heading">
-            <h2>KRISH'S CODING PROJECTS 
+            <h2>KRISH'S N.B.A. API PAGE 
                 <a href="https://www.instagram.com/hershey.krish/">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Instagram"
                     width="50";
@@ -119,25 +105,23 @@
                 </nav>
             </div>
         </div> -->
-        <div id="NBA">
-        </div>
-        <script>
-            const NBA = document.getElementById('NBA');
-            fetch("https://www.balldontlie.io/api/v1/teams")
-            .then(response => response.json())
-            .then(responseJson => {
-                console.log(responseJson);
-                for(y=0;y< 30;y++){
-                    const playerInfo = document.createElement("x");
-                    playerInfo.innerText = responseJson.data[y].full_name+" "+responseJson.data[y].abbreviation+" ";
-                    NBA.append(playerInfo);
-                } 
-            })
-                
-            .catch( error=> console.log(error))
+        <!-- <form>
+            NBA Team or Team City:<br> <input type="text" name="name">
+        </form> -->
+        <!-- <form action="" method="get" class="form" autocomplete="off">
+            <div class="form">
+              <label for="inputCity">Enter the city in which your favorite NBA team resides: </label>
+              <input type="text" name="name" id="inputCity" required />
+            </div>
+        </form> -->
+        <p>NBA Team or Team City: <br> [Atlanta, Boston, Brooklyn, Charlotte, Chicago, Cleveland, Dallas, Denver, Detroit, Houston, Indiana, LA, Memphis, Miami, Milwaukee, Minnesota, New Orleans, New York, Orlando, Philadelphia, Phoenix, Portland, Sacramento, Toronto, Utah, Washington]</p>
+        <input id="inputCity" type="text" placeholder="Text">
+        <button onclick="returnText()">Submit</button>
+        <div id="NBA"></div>
+        <script src="Spotify.js">
+            
+        </script>
 
-        </script> 
 
-       
     </body>
 </html>
