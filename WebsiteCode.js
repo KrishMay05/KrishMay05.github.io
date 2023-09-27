@@ -36,7 +36,7 @@ document.getElementById("SchoolProjects").onclick = function(){
     dropCount = dropCount+1;
     if(dropCount%2!=0){
         document.getElementById("SchoolProjects").innerHTML = "Purdue CS Projects & HW ⬇";
-        setLink("https://google.com","PP1");
+        setLink("https://github.com/KrishMay05/Purdue23-24/blob/main/TennisScores.java","PP1");
         setLink("https://amazon.com","PP2");
         setLink("https://youtube.com","PP3");
     }else{
