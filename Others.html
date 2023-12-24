@@ -40,8 +40,8 @@
         /* customizes the button visuals */
         .Heading{
             font: bold;
-            background-color: black;
-            color:azure;
+            background-color: tan;
+            color:black;
             margin: -50px;
             margin-top: -60px;
             text-indent: 50px;
@@ -83,12 +83,66 @@
             text-decoration: none ; 
 
         }
+        /* Dropdown Button */
+        .dropbtn {
+            background-color: tan;
+            color: black;
+            padding: 16px;
+            font-size: 60px;
+            margin-left: -10px;
+            margin-top: -10px;
+            text-align: center;
+            white-space: nowrap;
+            display:inline-block;
+            border: none;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            
+        }
+        
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #2980B9;
+            user-select: none;
+            
+        }
+        
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: absolute;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: relative;
+            margin-left: 90px;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd;}
+        
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {display:block;}
+        /* customizes the placment of the subheading */
         /* customizes the placment of the subheading */
     </style>
 </head>
     <body>
         <div class="Heading">
-            <h2>KRISH'S CODING PROJECTS 
+            <h2>KRISH'S CODE PROJECTS 
                 <a href="https://www.instagram.com/hershey.krish/">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Instagram"
                     width="50";
@@ -116,7 +170,14 @@
                     >
                 </a>
                 <!-- Creats multiple images with their corresponding links -->
-
+                <a>
+                    <button onclick="myFunction()" class="dropbtn"> &#9776;</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html"> Home Page </a>
+                        <a href="BBallAPI.html"> Basketball API Page</a>
+                        <!-- <a href="#">Project 3: </a>
+                        <a href="#">Project 4: </a> -->
+                </a>
 
             </h2>
         </div>
@@ -142,7 +203,7 @@
         <br>
         <label>     </label>
         <a href=""id = "linkvalue">GitHub Link</a>
-        <div class="Bottom">
+        <!-- <div class="Bottom">
             <div class = "newPage">
                 <nav>
                     <a href="https://krishmay05.github.io/">Home Page</a>
@@ -150,7 +211,7 @@
                     <a href="BBallAPI.html">API Page</a>
                 </nav>
             </div>
-        </div>
+        </div> -->
             <!-- Create the links for the various projects -->
         <script src="others.js">
         </script> 

@@ -47,38 +47,56 @@ document.getElementById("Proj1").onclick = function() {
     setLink("https://github.com/KrishMay05/Purdue23-24/blob/main/URLReader.java","linkvalue");
     document.getElementById("programPic").style.display = "block";
     document.getElementById("programPic").style.display = "block";
-    document.getElementById("programPic").src = "/URL.jpg";
+    document.getElementById("programPic").src = "URL.jpg";
 
 }
 document.getElementById("Proj2").onclick = function(){
     ChangeLabel(WebApp);
     setLink("https://github.com/KrishMay05/KrishMay05.github.io/blob/main/WebsiteCode.js","linkvalue");
     document.getElementById("programPic").style.display = "block";
-    document.getElementById("programPic").src = "/WebsiteJs.jpg";
+    document.getElementById("programPic").src = "WebsiteJs.jpg";
 }
 document.getElementById("Proj3").onclick = function(){
     ChangeLabel(WebAppHTML);
     setLink("https://github.com/KrishMay05/KrishMay05.github.io/blob/main/index.html","linkvalue");
     document.getElementById("programPic").style.display = "block";
-    document.getElementById("programPic").src = "/WebsiteScreen.jpg";
+    document.getElementById("programPic").src = "WebsiteScreen.jpg";
 }
 document.getElementById("Proj4").onclick = function(){
     ChangeLabel(Tetris);
     setLink("https://github.com/KrishMay05/GameSummer2022/blob/main/Modified%20Tetris","linkvalue");
     document.getElementById("programPic").style.display = "block";
-    document.getElementById("programPic").src = "/Tetris.jpg";
+    document.getElementById("programPic").src = "Tetris.jpg";
 }
 document.getElementById("Proj5").onclick = function(){
     ChangeLabel(Minesweep);
     setLink("https://github.com/KrishMay05/GameSummer2022/blob/main/MinesweeperRunner","linkvalue")
     document.getElementById("programPic").style.display = "block";
-    document.getElementById("programPic").src = "/minesweeper.jpg";
+    document.getElementById("programPic").src = "minesweeper.jpg";
 }
 document.getElementById("ProjX").onclick = function(){
     ChangeLabel(FTC);
     setLink("https://github.com/KrishMay05/Freight_Frenzy_2021-22","linkvalue");
     document.getElementById("programPic").style.display = "block";
-    document.getElementById("programPic").src = "/FTCrobot.jpg";
+    document.getElementById("programPic").src = "FTCrobot.jpg";
+}
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+  // Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+        }
+    }
 }
 
 // Makes it so that on button click it shows subheading information on click and makes the Github link button visible again
