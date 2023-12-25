@@ -32,21 +32,21 @@ document.getElementById("SchoolProjects").style.borderColor = "grey";
 
 // Makes it so that on button click it shows subheading information on click and makes the Github link button visible again
 var dropCount = 0; 
-document.getElementById("SchoolProjects").onclick = function(){
-    dropCount = dropCount+1;
-    if(dropCount%2!=0){
-        document.getElementById("SchoolProjects").innerHTML = "Purdue CS Projects & HW ⬇";
-        setLink("https://github.com/KrishMay05/Projects/tree/main/MessageSystem","PP1");
-        setLink("https://github.com/KrishMay05/Projects/tree/main/PythonAI","PP2");
-        setLink("https://github.com/KrishMay05/KrishMay05.github.io","PP3");
-    }else{
-        document.getElementById("SchoolProjects").innerHTML = "Purdue CS Projects & HW ➡";
-        document.getElementById("PP1").style.display = "none";
-        document.getElementById("PP2").style.display = "none";
-        document.getElementById("PP3").style.display = "none";
-    }
+// document.getElementById("SchoolProjects").onclick = function(){
+//     dropCount = dropCount+1;
+//     if(dropCount%2!=0){
+//         document.getElementById("SchoolProjects").innerHTML = "Purdue CS Projects & HW ⬇";
+//         setLink("https://github.com/KrishMay05/Projects/tree/main/MessageSystem","PP1");
+//         setLink("https://github.com/KrishMay05/Projects/tree/main/PythonAI","PP2");
+//         setLink("https://github.com/KrishMay05/KrishMay05.github.io","PP3");
+//     }else{
+//         document.getElementById("SchoolProjects").innerHTML = "Purdue CS Projects & HW ➡";
+//         document.getElementById("PP1").style.display = "none";
+//         document.getElementById("PP2").style.display = "none";
+//         document.getElementById("PP3").style.display = "none";
+//     }
 
-}
+// }
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */

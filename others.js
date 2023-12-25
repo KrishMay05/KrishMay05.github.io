@@ -40,11 +40,13 @@ let WebAppHTML = new CodeProject("HTML", "Index.html","HTML behind the home page
 let FTC = new CodeProject("Java", "FTC Freight Frenzy", "My code repository during the 2021-22 FTC season where I <br> was the sole programmer on a small team.");
 let Tetris = new CodeProject("Java", "Tetris.java", "An alternative form of Tetris I created in the summer of 2022.");
 let Minesweep = new CodeProject("Java", "MinesweeperRunner.java", "My own version of minesweeper I created in the summer of 2022.");
+let Message = new CodeProject("Java", "BlankServer.java & BlankClient.java", "A message system that allows useres to communicate w/ eachother.");
+let Paint = new CodeProject("Java", "Paint.java", "Creates a paint software simmilar to microsoft paint.");
 // creates the CodeProject objects with the relevant parameters 
 
 document.getElementById("Proj1").onclick = function() {
     ChangeLabel(WebScrape);
-    setLink("https://github.com/KrishMay05/Purdue23-24/blob/main/URLReader.java","linkvalue");
+    setLink("https://github.com/KrishMay05/Projects/blob/main/SmallProjects/Webscraper/URLReader.java","linkvalue");
     document.getElementById("programPic").style.display = "block";
     document.getElementById("programPic").style.display = "block";
     document.getElementById("programPic").src = "URL.jpg";
@@ -64,13 +66,13 @@ document.getElementById("Proj3").onclick = function(){
 }
 document.getElementById("Proj4").onclick = function(){
     ChangeLabel(Tetris);
-    setLink("https://github.com/KrishMay05/GameSummer2022/blob/main/Modified%20Tetris","linkvalue");
+    setLink("https://github.com/KrishMay05/Projects/blob/main/Games/Tetris.java","linkvalue");
     document.getElementById("programPic").style.display = "block";
     document.getElementById("programPic").src = "Tetris.jpg";
 }
 document.getElementById("Proj5").onclick = function(){
     ChangeLabel(Minesweep);
-    setLink("https://github.com/KrishMay05/GameSummer2022/blob/main/MinesweeperRunner","linkvalue")
+    setLink("https://github.com/KrishMay05/Projects/blob/main/Games/Minesweeper.java","linkvalue")
     document.getElementById("programPic").style.display = "block";
     document.getElementById("programPic").src = "minesweeper.jpg";
 }
@@ -79,6 +81,18 @@ document.getElementById("ProjX").onclick = function(){
     setLink("https://github.com/KrishMay05/Freight_Frenzy_2021-22","linkvalue");
     document.getElementById("programPic").style.display = "block";
     document.getElementById("programPic").src = "FTCrobot.jpg";
+}
+document.getElementById("Proj6").onclick = function(){
+    ChangeLabel(Message);
+    setLink("https://github.com/KrishMay05/Projects/tree/main/MessageSystem","linkvalue");
+    document.getElementById("programPic").style.display = "block";
+    document.getElementById("programPic").src = "Message.jpg";
+}
+document.getElementById("Proj7").onclick = function(){
+    ChangeLabel(Paint);
+    setLink("https://github.com/KrishMay05/Projects/tree/main/SmallProjects/Paint","linkvalue");
+    document.getElementById("programPic").style.display = "block";
+    document.getElementById("programPic").src = "paint.jpg";
 }
 
 function myFunction() {

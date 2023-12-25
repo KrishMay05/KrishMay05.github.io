@@ -7,7 +7,7 @@
     <style>
         body{
             font-size: large;
-            background-image: linear-gradient(rgb(200, 177, 215), rgb(125, 119, 129));
+            background-image: linear-gradient(black, black);
             text-decoration-color: white;
             margin-left: 50px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -27,7 +27,7 @@
         button{
             color: rgb(99, 42, 146);
             border-color: bisque;
-            color-scheme: bla ck;
+            color-scheme: white;
             background-color: blanchedalmond;
             width: 160px;
             height: 80px;
@@ -70,9 +70,8 @@
 
         }
         .Picture{
-            position: absolute;
-            margin-left: 1100px;
-            margin-top: 120px;
+            position: sticky;
+            margin-top: 50px;
         }
         label{
             /* position:sticky; */
@@ -82,6 +81,19 @@
         a {
             text-decoration: none ; 
 
+        }
+        .Text {
+            color: white;
+            background-color: tan;
+            
+        }
+        .TextLink {
+            background-color: tan;
+            width: 170px;
+        }
+        .hidden{
+            margin-left: 700px;
+            margin-top: -220px;
         }
         /* Dropdown Button */
         .dropbtn {
@@ -182,27 +194,33 @@
             </h2>
         </div>
         
-        <div class = "Picture">
-            <img src="", id="programPic",alt="hello"
-            width="250";
-            height="250";
-            >
-        </div>
+        
         <button id = "Proj1">Project 1: URL Reader</button>
         <button id = "Proj2">Project 2: Website JS</button> 
         <button id = "Proj3">Project 3: Website HTML</button> 
         <button id = "Proj4">Project 4: Altered Tetris</button>
+        <br>
         <button id = "Proj5">Project 5: Minesweeper</button>
         <button id = "ProjX">FTC Code Collection</button>
+        <button id = "Proj6">Messaging System</button>
+        <button id = "Proj7">Paint Software</button>
         
         <!-- create the buttons -->
         <br>
         <br>
-        <label>     </label>
-        <label id = "ProjDetails"><br><br></label>
-        <br>
-        <label>     </label>
-        <a href=""id = "linkvalue">GitHub Link</a>
+        <div class = "hidden">
+            <label>     </label>
+            <label class = "Text" id = "ProjDetails"><br><br></label>
+            <br>
+            <label>     </label>
+            <a class = "TextLink" href=""id = "linkvalue">GitHub Link</a>
+            <div class = "Picture">
+                <img src="", id="programPic",alt="hello"
+                width="250";
+                height="250";
+                >
+            </div>
+        </div>
         <!-- <div class="Bottom">
             <div class = "newPage">
                 <nav>
@@ -216,6 +234,23 @@
         <script src="others.js">
         </script> 
 
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+          // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
        
     </body>
 </html>
