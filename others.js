@@ -107,10 +107,11 @@ window.onclick = function(event) {
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
             if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
+                openDropdown.classList.remove('show');
             }
         }
     }
 }
+
 
 // Makes it so that on button click it shows subheading information on click and makes the Github link button visible again
