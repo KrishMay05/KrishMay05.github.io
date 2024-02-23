@@ -1,7 +1,13 @@
 var NBATeam;
 document.getElementById("LogoHTML").style.display = "none";
-document.getElementById("inputCity").style.marginLeft = "300px";
-document.getElementById("NBA").style.marginLeft = "300px";
+document.getElementById("inputCity").style.marginLeft = "0px";
+document.getElementById("NBA").style.marginLeft = "0px";
+const playerInfo = document.getElementById("NBA");
+document.getElementById("Inform").style.backgroundColor = "lightgrey";
+document.getElementById("Inform").style.padding = "5px";
+document.getElementById("Inform").style.width = "70%"
+
+playerInfo.innerHTML ="<p>" + "Team Name: " + "<p>Team Abbreviation: " + "<p>City: " + "<p>Confrence: " + "<p>Division: " + "<p>";
 
 // const Atlanta = "https://content.sportslogos.net/logos/6/220/thumbs/22081902021.gif";
 let logoHashMap = new Map([
