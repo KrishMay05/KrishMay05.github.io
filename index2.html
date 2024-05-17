@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: large;
+            /* background-color: rgb(115, 142, 168); */
+            background-image: linear-gradient(black, black);
+            text-decoration-color: white;
+            margin-left: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        /* Cosmetics for the background */
+        canvas{
+            border:1px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -320px;
+            margin-top: -320px;
+        }
+        button{
+            color: rgb(99, 42, 146);
+            border-color: bisque;
+            color-scheme: bla ck;
+            background-color: blanchedalmond;
+            width: 160px;
+            height: 80px;
+            font-size: 20px;
+            position:sticky;
+            margin-left: auto;
+            margin-top: 2%;
+            text-align: center;
+        }
+        /* customizes the button visuals */
+        .Heading{
+            font: bold;
+            background-color: tan;
+            color:black;
+            margin: -50px;
+            margin-top: -60px;
+            text-indent: 50px;
+            font-size: 50px;
+            width: 130%;
+            
+
+        }
+        /* .Bottom{
+            font: bold;
+            background-color: rgb(100, 96, 102);
+            color:rgb(100, 96, 102);
+            margin-top: 925px;
+            position: absolute;
+            font-size: 50px;
+            margin-left: -50px;
+            width: 2000px;
+
+        } */
+        /* Customizes the Heading div class, sets a header on the page with lings and a title */
+        .dropdown{
+            background-color: rgb(234, 228, 255);
+            width: 622px;
+            /* border: 5px */
+            padding: 0px;
+            margin-left: 4.5%;
+            margin-top: 70px;
+            position: absolute;
+        }
+        .bio{
+            position: sticky;
+            padding: 10px;
+            margin-left: 2%;
+            width: 46.5%;
+            margin-top: 10%;
+            background-color: tan;
+            font-size: x-large;
+            border-color: white;
+            border-width: 5px;
+            border-style:double;
+            color: black;
+        }
+        .croppedKrish{
+            margin-left: 55%;
+            margin-top: -400px;
+            border-radius: 100%;
+            border-color: grey;
+            border-width: 10px;
+            border-style:ridge;
+            overflow: hidden;
+            height: 700px;
+            width: 600px;
+        }
+        .newPage{
+            font: bold;
+            bottom: 0;
+            margin-left: -50px;
+            width: 500px;
+            margin-top: -40px;
+            position: relative;
+            font-size: xx-large;
+            color: rgb(100, 96, 102);
+            background-color: 0;
+        }
+        label{
+            /* position:sticky; */
+            margin-left: 0%;
+            margin-top: 10%;
+            position: relative; 
+        }
+        a {
+            text-decoration: none ; 
+
+        }
+        /* Dropdown Button */
+        .dropbtn {
+            background-color: tan;
+            color: black;
+            padding: 16px;
+            font-size: 60px;
+            margin-left: -10px;
+            margin-top: -10px;
+            text-align: center;
+            white-space: nowrap;
+            display:inline-block;
+            border: none;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            
+        }
+        
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: tan;
+            user-select: none;
+            
+        }
+        .myImage {
+            height: 700px;
+            width: 600px;
+        }
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: absolute;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            margin-left: 0px;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 5;
+        }
+        
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            background-color: tan;
+            font-size: 25px;
+            color: black;
+            padding: 2px 2px;
+            text-decoration: none;
+            display: block;
+        }
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd;}
+        
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {
+            display:block;
+        }
+        /* customizes the placment of the subheading */
+    </style>
+</head>
+    <body>
+        <div class="Heading">
+            <h2>Krish's Old Website
+                <a href="https://www.instagram.com/hershey.krish/">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Instagram"
+                    width="50";
+                    height="50";
+                    >
+                </a>
+                
+                <a href="mailto: krishrpatel@gmail.com">
+                    <img src="https://freelogopng.com/images/all_img/1657906383gmail-icon-png.png" alt="GMAIL"
+                    width="50";
+                    height="50";
+                    >
+                </a>
+                
+                <a href="https://www.linkedin.com/in/krish-patel-aba5b1289">
+                    <img src="https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-ya5g47j2.png" alt="Linkden"
+                    width="50";
+                    height="50";
+                    >
+                </a>
+                <a href="https://github.com/KrishMay05">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYNeX9Lac4S26To2qQN3FEqeFyjFMqDLdg5V0XeJo7Zg&s" alt="GitHub"
+                    width="50";
+                    height="50";
+                    >
+                </a>
+                <a>
+                    <button onclick="myFunction()" id = "hamburgerMenu" class="dropbtn"> &#9776;</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="Others.html"> Projects Page </a>
+                        <a href="BBallAPI.html"> Basketball API Page</a>
+                        <!-- <a href="#">Project 3: </a>
+                        <a href="#">Project 4: </a> -->
+                </a>
+            <!-- </a> -->
+                <!-- Creats multiple images with their corresponding links -->
+            </h2>
+            
+        </div>
+        
+        
+        <!-- <button id = "Proj1">Project 1: URL Reader</button>
+        <button id = "Proj2">Project 2: Website JS</button> 
+        <button id = "Proj3">Project 3: Website HTML</button> 
+        <button id = "Proj4">FTC Code Collection</button> -->
+        <!-- create the buttons -->
+        <br>
+        <br>
+        <label>     </label>
+        <br>
+        <label>     </label>
+        <div class = "bio">
+                        Hello, my name is Krish Patel and I am currently a Freshman studying Computer Science at Purdue University.
+                    I have create this website as a way to showcase some of my projects and CS skills as well as to have 
+                    a fun way to expiremnent with CS in my free time. I want to thank you for visiting my website, and have a great day. <br> <br> - Krish Patel.
+
+            </label> 
+
+        </div>
+        <!-- <div class ="dropdown">
+            <button id = "SchoolProjects">Purdue CS Projects & HW ➡</button>
+            <br>
+            <br>
+            <br>
+            <a href=""id = "PP1">Message System</a>
+            <a href=""id = "PP2">AI Chatbot</a>
+            <a href=""id = "PP3">Website Code</a>
+        </div> -->
+        <div class = "croppedKrish">
+                <img class = "myImage" 
+                src ="https://lh3.googleusercontent.com/pw/AIL4fc-Fw7tjvcC4M-5rO1BwIbwXjlKF5CSkGOBQ7C6TsVZHRyVVKVQL3qbEvasrXFVk9DJMs2yALMbnjEUCsZQdN0g3NyJY3HbRLYU0F3UpBK8D0MqTSjY=w2400">
+        </div>
+        <br>
+        
+        <!-- <div class = "newPage">
+            <nav>
+                ___
+                <a href="Others.html">Personal Projects</a>
+                ___
+                <a href="BBallAPI.html">API Page</a>
+            </nav>
+        </div> -->
+            <!-- Create the links for the various projects -->
+        <script src="test.js">
+        </script> 
+
+       
+    </body>
+</html>
